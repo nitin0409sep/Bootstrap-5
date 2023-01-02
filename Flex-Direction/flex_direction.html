@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 CSS CDN Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <title>Bootstrap 5</title>
+</head>
+
+<style>
+    .container {
+        border: 3px solid black;
+    }
+
+    .box-1 {
+        background-color: aquamarine;
+        min-height: 100px;
+    }
+
+    .box-2 {
+        background-color: red;
+        min-height: 100px;
+    }
+
+    .box-3 {
+        background-color: blue;
+        min-height: 100px;
+    }
+
+    .box-4 {
+        background-color: green;
+        min-height: 100px;
+    }
+</style>
+
+<body>
+
+    <!-- 
+        Flex Properties-:
+            1 - flex-row / flex-row reverse
+            
+            2 - flex-column  / flex-column-reverse  -: when we use this property on parent of element, all child div inside it r reversed 
+            
+            3 - flex-wrap -: by default lagi hee hoti hai -> agar 4 div lele tumnay col-3 ki toh jo next div(5th div) 
+                             hogi yeh neechay bhej deta hai in next column    
+            
+            4 - flex-nowrap -: ek hee line mein laana chatay ho div 5th wala bhi toh.
+            
+            5-: flex-wrap-reverse -: by default lagi hee hoti hai -> agar 4 div lele tumnay col-3 ki toh jo next div(5th div) 
+                                     hogi yeh upar(top) bhej deta hai in next column
+
+
+            6-: col-flex-fill -: div take full length on the screen. Work only on col, not on any break point nor on row
+    -->
+
+    <div class="container m-5 py-5">
+        <div class="row flex-wrap-reverse">
+            <div class="col-flex-fill box-1 ">Box-1</div>
+            <div class="col-md-3 box-2">Box-2</div>
+            <div class="col-flex-fill box-3">Box-3</div>
+            <div class="col-md-3 box-4">Box-4</div>
+            <div class="col-md-3 box-2">Box-2</div>
+        </div>
+    </div>
+
+    <!--
+         Break Points -: At particular screen it will work -:
+         lg -: it will work for lg, xl , xxl
+         md -: it will work for md, lg, xl , xxl
+         sm -: it will work for sm, md, lg, xl , xxl
+    -->
+
+    <!-- flex-sm-*,flex-md-*,flex-lg-*,flex-xl-*,flex-xxl-*   -->
+    <!-- where * = flex-row, flex-row-reverse, flex-column, flex-column-reverse, flex-wrap, flex-nowra  -->
+    <!-- * -: Never/Not work on flex-fill -->
+
+    <div class="container m-5 py-5">
+        <div class="row flex-lg-wrap-reverse">
+            <div class="col-md-3 box-1 ">Box-1</div>
+            <div class="col-md-3 box-2">Box-2</div>
+            <div class="col-md-3 box-3">Box-3</div>
+            <div class="col-md-3 box-4">Box-4</div>
+            <div class="col-md-3 box-2">Box-2</div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5 JS CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

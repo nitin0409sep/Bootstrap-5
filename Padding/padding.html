@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 CSS CDN Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <title>Bootstrap 5</title>
+</head>
+
+<style>
+    .container {
+        border: 3px solid black;
+    }
+
+    .box-1 {
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+
+    <!-- Padding -: p-*, ps-*, pe-*, pt.*, pb.* -: * = number b/w 0 to 5  // mr changed to me & ml changed to ms in Bootstrap-5-->
+    <!-- Padding -: px -: right & left -:(Horizontal) , py -: top & bottom -:(Vertical) -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 box-1 p-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam illum, porro perspiciatis
+                tempore rerum, perferendis beatae omnis quae excepturi amet eveniet rem suscipit obcaecati fugiat nemo
+                dignissimos. Sequi, vero!
+            </div>
+
+            <div class="col-sm-4 ms-5 ps-5 pt-5 pb-4 pe-5 box-1 ">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam illum, porro perspiciatis
+                tempore rerum, perferendis beatae omnis quae excepturi amet eveniet rem suscipit obcaecati fugiat nemo
+                dignissimos. Sequi, vero!
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+         Break Points -: At particular screen it will work -:
+         lg -: it will work for lg, xl , xxl
+         md -: it will work for md, lg, xl , xxl
+         sm -: it will work for sm, md, lg, xl , xxl
+    -->
+
+    <!--  .p-sm-*, .p-md-*,.p-lg-*,.p-xl-*,.p-xxl-* -->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 ps-5 pt-3 pb-4 box-1 ">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam illum, porro perspiciatis
+                tempore rerum, perferendis beatae omnis quae excepturi amet eveniet rem suscipit obcaecati fugiat nemo
+                dignissimos. Sequi, vero!
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5 JS CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
